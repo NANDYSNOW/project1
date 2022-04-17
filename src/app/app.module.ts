@@ -3,13 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { EmployeeComponent } from './employee/employee.component';
+import { RouterModule,Routes } from '@angular/router';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    EmployeeComponent,
+    PagenotfoundComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,RouterModule,
     AppRoutingModule
   ],
   providers: [],
